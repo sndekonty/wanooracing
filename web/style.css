@@ -1,0 +1,266 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+html, body{
+	width: 100%;
+	height: 100%;
+}
+head {
+    font-family: monospace;
+}
+body {
+  background-image: url('/pics/swirl.png');
+  background-color: #fa7e76;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: #dedede;
+  font-family: monospace;
+}
+img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+p {
+  margin: 2% 3%;
+  text-indent: 3%;
+}
+h5 {
+  text-align:center;
+  font-size:1vw;
+  color:rgba(222,222,222,0.42);
+  font-weight:bold;
+}
+h4 {
+  text-align: center;
+}
+h3 {
+  padding: 0;
+}
+h2 {
+  text-align:center;
+}
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  }
+
+/* unvisited link */
+a:link {
+  color: #dedede;
+}
+
+/* visited link */
+a:visited {
+  color: #dedede;
+}
+
+/* mouse over link */
+a:hover {
+  color: #bce6b5;
+}
+
+/* selected link */
+a:active {
+  color: #5aa64e;
+}
+.row {
+  display: flex;
+  padding: 0% 3%;
+}
+
+.column {
+  padding: 5px;
+}
+.menucolumn {
+  flex: 20%;
+  width: 10%;
+  vertical-align: sub;
+  padding: 5px;
+}
+/* key stuff */
+.your-centered-div {
+    position: flex;
+    margin: center;
+}
+.title-box {
+  background: rgba(36,35,35,0.1);
+  background-image: url('/pics/skulls.png'); 
+  background-repeat: yes;
+  background-attachment: fixed;
+  border-radius: 25px;
+  width: fit-content;
+  margin: auto;
+  padding: 1px 5px;
+  border-color: rgba(36,35,35,1);
+}
+.text-box {
+  padding: 0;
+  background: rgba(36,35,35,0.73);
+  margin: 1% 3%;
+}
+.liv-box {
+  padding: 0;
+  background: rgba(36,35,35,0.90);
+  background-image: url('/pics/skulls.png'); 
+  background-repeat: yes;
+  background-attachment: fixed;
+  border-radius: 5px;
+}
+.rounded {
+  border-radius: 5px;
+}
+.container {
+  margin: 1% 3%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.container div {
+  padding: 0;
+  margin: 1% 3%;
+  background-image: url('/pics/skulls.png'); 
+  background-repeat: yes;
+  background-attachment: fixed;
+  border-radius: 5px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+}
+.deanbgimg {
+  background-image: url('/pics/inspiration-geometry.png');
+  background-color: #3b607d;
+  background-attachment: scroll;
+  background-repeat: repeat;
+}
+.midasbgimg {
+  background-image: url('/pics/skulls.png');
+  background-color: #000000;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.zoomC {
+  transition: transform .4s;/* Animation */
+}
+
+.zoomC:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoomS {
+  transition: transform .4s;/* Animation */
+}
+
+.zoomS:hover {
+  transform: scale(1.1) translate(4%); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* bloxNav */
+      #bloxNav {
+          display: flex;
+          align-items: center;
+          padding: 5px;
+          background-color: undefined;
+          flex-flow: row;
+          justify-content: center;
+          gap: 1px;
+          font-family: monospace;
+          font-size: 15px;
+      }
+  
+      #bloxNav,
+      #bloxNav a,
+      #bloxNav a:visited {
+          color: #dedede;
+      }
+  
+      #bloxNav a {
+          text-decoration: none;
+      }
+  
+      .bloxBlock {
+          background-color: #242323;
+          padding: 5px 6px;
+          border: 0px none #929000;
+          border-radius: 5px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: row;
+          gap: 3px;
+          height: 20px;
+      }
+        .DeanbloxBlock {
+          background-image: url('/pics/skulls.png'); 
+          background-repeat: yes; 
+          background-attachment: fixed;
+          background-color:rgba(222,222,222,0.42);
+          padding: 15px 10px;
+          border: 0px none #929000;
+          border-radius: 25px;
+          text-align: justify;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: column;
+          gap: 3px;
+          height: 5px;
+          margin: 5% 5%;
+      }
+        .MidasbloxBlock {
+          background-image: url('/pics/psychedelic.png'); background-repeat: yes; background-attachment: fixed;
+          padding: 10px 60px;
+          border: 0px none #929000;
+          border-radius: 5px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: row;
+          gap: 50px;
+          height: 20px;
+      }
+      .bloxBlock img,
+      .bloxBlock span {
+          display: inline-block;
+          vertical-align: middle;
+      }
+  
+      .bloxBlock img {
+          height: 16px;
+          image-rendering: pixelated;
+      }
+  
+      .bloxBlock span {
+          display: inline-block;
+      }
